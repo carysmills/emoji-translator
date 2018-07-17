@@ -1,0 +1,130 @@
+body, button, input, textarea {
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+  color: #6D4794;
+}
+
+body {
+  background: #F7D1CD;
+}
+
+.App {
+  max-width: 1400px;
+  display: block;
+  margin: 0 auto;
+  min-height: 90vh;
+}
+
+h1 {
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  margin: 50px 0 60px 0;
+  font-size: 60px;
+  color:#CBFAD3;
+  text-shadow:
+  -1.4px -1.4px 0 #A369D7,  
+   1.4px -1.4px 0 #A369D7,
+   -1.4px 1.4px 0 #A369D7,
+    1.4px 1.4px 0 #A369D7;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea.emojis {
+  position: absolute;
+  left: -10000000px;
+}
+
+.output {
+  width: 50%;
+  min-height: 200px;
+  padding: 10px;
+  background: white;
+  margin: 0 0 10px 5px;
+  border: 1px solid #6D4794;
+}
+
+.inputContainer {
+  width: 50%;
+  min-height: 200px;
+  border: 1px solid#6D4794;
+  outline: #fff;
+  padding: 10px;
+  margin: 0 5px 10px 0;
+  background: #fff;
+}
+
+.inputContainer #input {
+  background: white;
+  border: none;
+  width: 100%;
+  height: 100%;
+  outline: transparent;
+}
+
+.inputContainer textarea {
+  min-height: 200px;
+  min-width: 95%;
+}
+
+.container {
+  display: flex;
+}
+
+.buttonContainer {
+  margin: 15px 0;
+}
+
+button.copy, button.random, button.tweet {
+  background: none;
+  border: 1px solid  rgb(163, 105, 215, 1);
+  padding: 5px;
+  transition: background 0.3s;
+  margin: 2px 0;
+  box-shadow: 3px 3px rgba(163, 105, 215, 0.5);
+  background: #CBFAD3;
+}
+
+button.copy:hover, button.random:hover, button.tweet:hover {
+  background:whitesmoke;
+  cursor: pointer;
+}
+
+button.tweet {
+  margin-left: 10px;
+}
+
+.copyContainer {
+  justify-content: flex-end; 
+  display: flex;
+}
+
+.copied {
+  margin: 9px 0;
+}
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media(max-width: 400px) {
+  .container {
+    display: block;
+  }
+  .inputContainer, .output {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 0;
+  }
+  button.random {
+    width: 100%;
+    display: block;
+  }
+}
